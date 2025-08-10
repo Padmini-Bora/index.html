@@ -1,5 +1,104 @@
-git init
-git remote add origin https://github.com/YOUR_USERNAME/devops-lifecycle-diagram.git
-git add .
-git commit -m "Add DevOps lifecycle diagram"
-git push -u origin master
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Lifecycle Diagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .stage {
+      background: #fff;
+      border: 2px solid #007bff;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-weight: bold;
+      color: #007bff;
+      position: relative;
+    }
+
+    .arrow {
+      width: 40px;
+      height: 20px;
+      margin: 0 10px;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .note {
+      margin-top: 40px;
+      text-align: center;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+
+      .arrow {
+        transform: rotate(90deg);
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>DevOps Lifecycle</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="stage">Plan</div>
+      <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" class="arrow" alt="arrow">
+      <div class="stage">Develop</div>
+      <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" class="arrow" alt="arrow">
+      <div class="stage">Build</div>
+      <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" class="arrow" alt="arrow">
+      <div class="stage">Test</div>
+    </div>
+
+    <div class="row">
+      <div class="stage">Release</div>
+      <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" class="arrow" alt="arrow">
+      <div class="stage">Deploy</div>
+      <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" class="arrow" alt="arrow">
+      <div class="stage">Operate</div>
+      <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" class="arrow" alt="arrow">
+      <div class="stage">Monitor</div>
+    </div>
+  </div>
+
+  <div class="note">
+    <p>The DevOps lifecycle is a continuous process that involves planning, developing, building, testing, releasing, deploying, operating, and monitoring applications.</p>
+  </div>
+</body>
+</html>
